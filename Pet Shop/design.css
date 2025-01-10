@@ -36,7 +36,7 @@ body {
 }
 
 .logo img {
-    width: 50px;
+    width: 90px;
     margin-right: 10px;
 }
 
@@ -59,13 +59,14 @@ ul li {
 }
 
 ul li a {
-    color: #0000;
+    color: #000;
     text-decoration: none;
-    font-size: 13px;
-    font-weight: bold;
+    font-size: 12px;
+    font-weight: 300;
+    border-bottom: 2px solid transparent;
 }
 
-.arrow-down {
+/* .arrow-down {
     border: solid #FFFFFF8C;
     border-width: 0 2px 2px 0;
     display: inline-flex;
@@ -77,13 +78,19 @@ ul li a {
 
 li:hover.arrow-down {
     border-color: #f4c095;
-}
+} */
 
 
 ul li ul.nav-links li {
-    display: block;
+    display: flex;
     padding: 5px;
     margin-top: 2px;
+}
+
+ul li ul.nav-links span {
+    color: #000;
+    font-weight: 500;
+    margin: 10px 20px 15px 5px;
 }
 
 ul li ul.nav-links li a {
@@ -91,31 +98,68 @@ ul li ul.nav-links li a {
 }
 
 ul li ul.nav-links {
-    width: 13%;
+    width: 30%;
     z-index: 1000;
     display: none;
     position: absolute;
-    background-color: #fff;
+    background-color: #fcfafb;
 }
 
 ul li ul.nav-links li a:hover {
-    color: #f4c095;
+    color: #8EC640;
+    border-bottom: 2px solid transparent;
 }
 
 ul li a:hover {
-    color: #f4c095;
+    color: #8EC640;
+    border-bottom: 2px solid #8EC640;
 }
 
 ul li:hover ul.nav-links {
     display: block;
 }
 
+.product-card {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
 
+.product-card h1{
+    font-size: 12px;
+    font-size: 100;
+    margin-top: 5px;
+}
 
-.contact-info {
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.product-card p {
+    margin: 0;
+    color: #000;
+}
+
+.product-card .price {
+    font-size: 16px;
+    margin: 10px 0;
+    color:#000
+  }
+
+.product-card .price span{
+    text-decoration: line-through;
+    color: #999;
+    margin-left: 5px;
+}
+
+/* .contact-info {
     font-size: 14px;
     cursor: pointer;
-}
+} */
 
 .menu-icon {
     display: flex;
@@ -123,10 +167,10 @@ ul li:hover ul.nav-links {
     cursor: pointer;
 }
 
-.menu-icon span {
+/* .menu-icon span {
     margin-right: 10px;
-    color: white;
-}
+    color: #000;
+} */
 
 .hamburger-icon {
     display: flex;
@@ -138,18 +182,18 @@ ul li:hover ul.nav-links {
 
 .hamburger-icon div {
     height: 2px;
-    background-color: white;
+    background-color: #000;
 }
 
 
 /* Side Menu Styling */
 .side-menu {
     height: 100%;
-    width: 0;
+    width: 30;
     position: fixed;
     top: 0;
     right: 0;
-    background-color: #666;
+    background-color: #000;
     overflow-x: hidden;
     transition: 0.3s;
     padding-top: 60px;
@@ -168,7 +212,7 @@ ul li:hover ul.nav-links {
 }
 
 .side-menu a:hover {
-    background-color: #f4c095;
+    background-color: #8EC640;
 }
 
 .close-btn {
@@ -195,7 +239,7 @@ ul li:hover ul.nav-links {
 
 .dropdown-content {
     display: none;
-    background-color: #444;
+    background-color: #000;
     padding-left: 15px;
 }
 
